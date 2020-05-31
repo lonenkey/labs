@@ -1,0 +1,11 @@
+---
+- name:  Clean up for lab 1
+  hosts: all
+  tasks:
+    - name:  Remove user1 and home directory
+      user:
+        name:  user1
+        state: absent
+        remove: yes
+        force: yes
+
