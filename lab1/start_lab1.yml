@@ -1,9 +1,8 @@
 ---
-- name: Lab 1, working with files
-  hosts: all
-  tasks: 
-    - name: Create user1
-      user: 
-        name: user1
-        state: present
-        password: $6$mysecretsalt$3PCsV9wCXi3/XeCQAF/cIOtgikV7HGrINsi4RqD6h0n63yh8.hk9Yqv93yK7tAQU5e8PjlZRHHtv5wqmTxEnt0
+
+-  import_playbook: start_vm.yml
+
+-  import_playbook:  wait_for_ssh.yml  
+
+-  import_playbook: useradd.yml
+

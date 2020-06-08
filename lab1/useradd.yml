@@ -1,6 +1,6 @@
 ---
 - name: Lab 1, working with files
-  hosts: all
+  hosts: labvms
   tasks: 
     - name: Create user1
       user: 

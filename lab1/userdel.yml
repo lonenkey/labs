@@ -1,6 +1,6 @@
 ---
 - name:  Clean up for lab 1
-  hosts: all
+  hosts: labvms
   tasks:
     - name:  Remove user1 and home directory
       user:

@@ -1,9 +1,9 @@
 ---
 - name: startup a VM
-  hosts: all
+  hosts: labhosts
   tasks: 
     - name: do the job
       virt: 
-        name: vm-1
+        name: lab-1
         state: running
 
