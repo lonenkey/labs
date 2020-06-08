@@ -1,0 +1,9 @@
+---
+- name: startup a VM
+  hosts: all
+  tasks: 
+    - name: do the job
+      virt: 
+        name: vm-1
+        state: running
+

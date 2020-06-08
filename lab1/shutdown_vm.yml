@@ -1,0 +1,9 @@
+---
+- name: shutdown a VM
+  hosts: all
+  tasks: 
+    - name: do the job
+      virt: 
+        name: lab-1
+        state: shutdown
+
