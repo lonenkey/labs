@@ -1,0 +1,5 @@
+---
+
+-  import_playbook: userdel.yml
+
+-  import_playbook: shutdown_vm.yml
